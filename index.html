@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Haruki Careers</title>
+  </head>
+  <body>
+    <section class="header-section">
+      <header>
+        <a href="index.html" class="logo-link"><p class="logo">HARUKI</p></a>
+        <div class="navigation">
+          <nav>
+            <ul>
+              <li>
+                <a
+                  href="index.html"
+                  onmouseover="addLine(this)"
+                  onmouseout="removeLine(this)"
+                  >Welcome</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html"
+                  onmouseover="addLine(this)"
+                  onmouseout="removeLine(this)"
+                  >What We Do</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html"
+                  onmouseover="addLine(this)"
+                  onmouseout="removeLine(this)"
+                  >All Jobs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html"
+                  onmouseover="addLine(this)"
+                  onmouseout="removeLine(this)"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="patterns">
+        <img src="images/Pattern.svg" alt="half-circle" class="half-circle" />
+        <img src="images/Circle.svg" alt="Whole-Circle" class="circle" />
+      </div>
+      <div class="company">
+        <p>Haruki Careers</p>
+        <h1>Work With Us</h1>
+      </div>
+      <div class="search-container">
+        <input id="search-input" type="text" placeholder="Search Jobs" />
+        <button id="search-button">
+          <img src="images/search.svg" alt="Search Icon" />
+          Search
+        </button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
