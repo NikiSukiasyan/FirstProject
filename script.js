@@ -12,9 +12,22 @@ function removeLine(link) {
   link.style.fontFamily = "montserratlight";
 }
 const searchButton = document.getElementById("search-button");
+const searchInput = document.getElementById("search-input");
+
+searchInput.addEventListener("input", () => {
+  if (searchInput.value.trim() !== "") {
+    searchButton.disabled = false;
+  } else {
+    searchButton.disabled = true;
+  }
+});
+
 searchButton.addEventListener("click", () => {
-  const searchInput = document.getElementById("search-input");
   const searchQuery = searchInput.value;
   const searchUrl = `https://www.google.com/search?q=${searchQuery}+jobs`;
   window.open(searchUrl, "_blank");
 });
+searchButton.disabled = true;
+if (searchInput.value.trim() !== "") {
+  searchButton.disabled = false;
+}
