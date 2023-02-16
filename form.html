@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/3d10a55470.css"
+      crossorigin="anonymous"
+    />
+    <title>SignUp</title>
+  </head>
+  <body class="registration-page">
+    <section>
+      <div>
+        <img
+          src="images/Illustration.png"
+          alt="Illustration"
+          class="ilustration"
+          id="lightmode-image"
+        />
+      </div>
+      <div class="registration-bigbox">
+        <div class="registration-box"><p>Signup</p></div>
+        <div class="warning-box">
+          <span class="warning">There is no charge upon registration!</span>
+        </div>
+        <div class="small-box">
+          <form>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" required />
+            <div class="country-change">
+              <span id="change-country" class="change-country">Change</span>
+            </div>
+            <div class="form-row">
+              <div class="city-container">
+                <label for="city">City</label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  required
+                  class="city"
+                />
+              </div>
+              <div class="zipcode-container">
+                <label for="zipcode">Zip Code</label>
+                <input
+                  type="text"
+                  id="zipcode"
+                  name="zipcode"
+                  required
+                  class="zipcode"
+                />
+              </div>
+            </div>
+            <div class="button-container">
+              <button type="submit" id="signup-btn" disabled class="signupbtn">
+                Signup now
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="facebookbtn-container">
+          <button class="darkfb" onclick="openFacebookLoginPage()">
+            Signup with Facebook
+          </button>
+          <button class="lightfb" onclick="openFacebookLoginPage()">
+            Signup with Facebook
+          </button>
+        </div>
+      </div>
+      <div class="icon-box">
+        <button class="icon-button" id="dark-icon">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </section>
+    <script>
+      const emailInput = document.querySelector("#email");
+      const countryInput = document.querySelector("#country");
+      const cityInput = document.querySelector("#city");
+      const zipcodeInput = document.querySelector("#zipcode");
+      const signupBtn = document.querySelector("#signup-btn");
+
+      emailInput.addEventListener("input", toggleButtonState);
+      countryInput.addEventListener("input", toggleButtonState);
+      cityInput.addEventListener("input", toggleButtonState);
+      zipcodeInput.addEventListener("input", toggleButtonState);
+
+      function toggleButtonState() {
+        if (
+          emailInput.value.trim() !== "" &&
+          countryInput.value.trim() !== "" &&
+          cityInput.value.trim() !== "" &&
+          zipcodeInput.value.trim() !== ""
+        ) {
+          signupBtn.disabled = false;
+          signupBtn.style.cursor = "pointer";
+        } else {
+          signupBtn.disabled = true;
+          signupBtn.style.cursor = "default";
+        }
+      }
+      function openFacebookLoginPage() {
+        window.open("https://www.facebook.com/login.php");
+      }
+      const darkButton = document.querySelector("#dark-icon");
+      const myImage = document.querySelector("#lightmode-image");
+      const registrationBox = document.querySelector(".registration-box");
+      const smallBox = document.querySelector(".small-box");
+
+      darkButton.addEventListener("click", () => {
+        if (myImage.src.includes("images/Illustration.png")) {
+          myImage.src = "images/dark-mode.png";
+          myImage.style.width = "1365.33px";
+          myImage.style.height = "1024px";
+          registrationBox.style.backgroundColor = "#1F2327";
+          smallBox.style.backgroundColor = "#292E33";
+          smallBox.style.border = "none";
+          smallBox.style.boxShadow = "none";
+          document.querySelectorAll(".small-box label").forEach((label) => {
+            label.style.color = "#fff";
+          });
+          document.querySelectorAll(".small-box input").forEach((input) => {
+            input.style.color = "#fff";
+            input.style.backgroundColor = "#292E33";
+            input.style.borderColor = "#33393F";
+          });
+          document.querySelector(".registration-box p").style.color = "#fff";
+          signupBtn.classList.remove("lightbtn");
+          signupBtn.classList.add("darkbtn");
+        } else {
+          myImage.src = "images/Illustration.png";
+          myImage.style.width = "";
+          myImage.style.height = "";
+          registrationBox.style.backgroundColor = "";
+          smallBox.style.backgroundColor = "";
+          smallBox.style.border = "";
+          smallBox.style.boxShadow = "";
+          document.querySelectorAll(".small-box label").forEach((label) => {
+            label.style.color = "";
+          });
+          document.querySelectorAll(".small-box input").forEach((input) => {
+            input.style.color = "";
+            input.style.backgroundColor = "";
+            input.style.borderColor = "";
+          });
+          document.querySelector(".registration-box p").style.color = "";
+          signupBtn.classList.remove("darkbtn");
+          signupBtn.classList.add("lightbtn");
+        }
+        const darkButton = document.querySelector("#dark-icon");
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/3d10a55470.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
