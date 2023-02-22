@@ -361,3 +361,259 @@ input {
   cursor: pointer;
   font-size: 30px;
 }
+.span-container {
+  display: flex;
+  flex-direction: row;
+  gap: 29px;
+  margin-top: 110px;
+  margin-left: 150px;
+}
+.span-container span {
+  font-family: "montserratlight";
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -2%;
+  color: #8b8b8b;
+}
+.roles-locations {
+  margin-left: 150px;
+  margin-top: 64px;
+}
+.roles-box {
+  display: flex;
+  gap: 7px;
+  padding-bottom: 32px;
+}
+.numofroles {
+  font-family: "montserrat";
+  font-size: 80px;
+  color: #191919;
+  line-height: 80px;
+}
+.roles {
+  font-family: "montserrat";
+  font-size: 32px;
+  color: #979797;
+  margin-top: 40px;
+}
+.line {
+  width: 272px;
+  border: 1px solid #dddddd;
+}
+.locations-box {
+  display: flex;
+  gap: 7px;
+  padding-top: 32px;
+}
+.numoflocations {
+  font-family: "montserrat";
+  font-size: 80px;
+  color: #191919;
+  line-height: 80px;
+}
+.locations {
+  font-family: "montserrat";
+  font-size: 32px;
+  color: #979797;
+  margin-top: 38px;
+}
+.work-box {
+  margin-left: 650px;
+  margin-top: -227px;
+}
+.work-we-do {
+  width: 742px;
+  font-family: "montserrat";
+  font-size: 72px;
+  line-height: 79.2px;
+  color: #191919;
+  font-weight: 500;
+}
+.explanation-of-work {
+  width: 742px;
+  height: 237px;
+  height: 90px;
+  font-family: "montserratlight";
+  font-size: 20px;
+  line-height: 30px;
+  color: #6d6d6d;
+}
+.learn-box {
+  margin-left: 150px;
+  display: flex;
+  gap: 12px;
+}
+
+.learn-box p {
+  font-family: "montserrat";
+  font-size: 20px;
+  line-height: 30px;
+  color: #545454;
+  font-weight: 600;
+}
+.right-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  border: solid 1px;
+  border-color: #b6b6b6;
+  border-radius: 50px;
+}
+.mission-box {
+  position: relative;
+}
+.mission-smallbox {
+  position: absolute;
+  top: 602px;
+  left: 150px;
+  z-index: 1;
+}
+.champion-mission {
+  width: 415px;
+  height: 316px;
+  font-family: "montserrat";
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 79.2px;
+  color: #191919;
+  margin-bottom: 20px;
+}
+.mission-explanation {
+  position: absolute;
+  width: 251px;
+  height: 120px;
+  z-index: 1;
+  font-family: "montserrat";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #6d6d6d;
+}
+.airbnb-careers {
+  width: 533px;
+  margin-top: 784px;
+  margin-left: 334px;
+}
+.innovation-box {
+  display: flex;
+  gap: 18px;
+  margin-left: 952px;
+  margin-top: -361px;
+}
+.innovation-num {
+  font-family: "montserrat";
+  font-size: 32px;
+  font-weight: 700;
+  color: #b1b1b1;
+}
+.innovation {
+  font-family: "montserrat";
+  font-size: 32px;
+  font-weight: 500;
+  color: #b1b1b1;
+}
+.about-innovation {
+  width: 367px;
+  height: 210px;
+  font-family: "montserrat";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #575757;
+  margin-left: -242px;
+  margin-top: 58px;
+}
+.connectivity-num {
+  font-family: "montserrat";
+  font-size: 32px;
+  font-weight: 500;
+  color: #191919;
+  margin-left: -388px;
+  margin-top: 331px;
+}
+.connectivity {
+  font-family: "montserrat";
+  font-size: 32px;
+  font-weight: 500;
+  color: #191919;
+  margin-top: 331px;
+}
+.reality-num {
+  font-family: "montserrat";
+  font-size: 32px;
+  font-weight: 500;
+  color: #191919;
+  margin-left: -282px;
+  margin-top: 381px;
+}
+.reality {
+  font-family: "montserrat";
+  font-size: 32px;
+  font-weight: 500;
+  color: #191919;
+  margin-top: 381px;
+}
+.perks-benefits {
+  width: 312px;
+  font-family: "montserrat";
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 79.2px;
+  color: #191919;
+  margin-top: 130px;
+  margin-left: 150px;
+}
+
+.perks-benefits-list {
+  margin-left: 620px;
+  margin-top: -215px;
+}
+
+.perks-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 70px);
+  grid-gap: 100px;
+}
+
+.perks-item {
+  position: relative;
+}
+
+.after-column:after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: -76px;
+  right: -20px;
+  height: 484px;
+  border-left: 1px solid #dddddd;
+}
+.after-column2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: -247px;
+  right: 0px;
+  height: 484px;
+  border-left: 1px solid #dddddd;
+}
+.perks-item span {
+  font-family: "montserrat";
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  color: #191919;
+  padding-bottom: 10px;
+}
+
+.perks-item p {
+  font-family: "montserrat";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.8px;
+  color: #191919;
+}

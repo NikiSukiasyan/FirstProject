@@ -4,7 +4,6 @@ function addLine(link) {
   link.parentNode.style.paddingBottom = "12px";
   link.style.fontFamily = "montserratBold";
 }
-
 function removeLine(link) {
   link.style.borderBottom = "";
   link.style.fontWeight = 290;
@@ -13,7 +12,6 @@ function removeLine(link) {
 }
 const searchButton = document.getElementById("search-button");
 const searchInput = document.getElementById("search-input");
-
 searchInput.addEventListener("input", () => {
   if (searchInput.value.trim() !== "") {
     searchButton.disabled = false;
@@ -21,7 +19,6 @@ searchInput.addEventListener("input", () => {
     searchButton.disabled = true;
   }
 });
-
 searchButton.addEventListener("click", () => {
   const searchQuery = searchInput.value;
   const searchUrl = `https://www.google.com/search?q=${searchQuery}+jobs`;
