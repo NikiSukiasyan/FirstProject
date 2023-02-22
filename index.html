@@ -8,7 +8,7 @@
     <title>Haruki Careers</title>
   </head>
   <body>
-    <section class="header-section">
+    <section class="header-section" id="section1">
       <header>
         <a href="index.html" class="logo-link"><p class="logo">HARUKI</p></a>
         <div class="navigation">
@@ -24,33 +24,37 @@
               </li>
               <li>
                 <a
-                  href="index.html"
+                  href="#section1"
                   onmouseover="addLine(this)"
                   onmouseout="removeLine(this)"
+                  onclick="scrollToSection(event)"
                   >Welcome</a
                 >
               </li>
               <li>
                 <a
-                  href="index.html"
+                  href="#section2"
                   onmouseover="addLine(this)"
                   onmouseout="removeLine(this)"
+                  onclick="scrollToSection(event)"
                   >What We Do</a
                 >
               </li>
               <li>
                 <a
-                  href="index.html"
+                  href="#section3"
                   onmouseover="addLine(this)"
                   onmouseout="removeLine(this)"
+                  onclick="scrollToSection(event)"
                   >All Jobs</a
                 >
               </li>
               <li>
                 <a
-                  href="index.html"
+                  href="#footer"
                   onmouseover="addLine(this)"
                   onmouseout="removeLine(this)"
+                  onclick="scrollToSection(event)"
                   >Contact Us</a
                 >
               </li>
@@ -107,7 +111,7 @@
         </button>
       </div>
     </section>
-    <section>
+    <section id="section2">
       <div class="mission-box">
         <div class="mission-smallbox">
           <h3 class="champion-mission">Our Champion for the Mission</h3>
@@ -139,7 +143,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="section3">
       <h4 class="perks-benefits">Perks and Benefits</h4>
       <div class="perks-benefits-list">
         <div class="perks-column">
@@ -182,6 +186,85 @@
         </div>
       </div>
     </section>
+    <section id="section4">
+      <div class="tour-box">
+        <h5 class="tour">Tour our offices</h5>
+        <img src="images/arrow.svg" alt="right-arrow" />
+      </div>
+      <div class="office-images">
+        <img
+          src="images/airbnb-headquarters-san-francisco-11-700x727.jpeg"
+          alt="san-francisco-office"
+          class="san-francisco"
+        />
+        <img src="images/airbnb-newyork.jpeg" alt="New-York" class="new-york" />
+        <img
+          src="images/airbnb-functionality.webp"
+          alt="airbnb-functionality"
+          class="functionality"
+        />
+        <div class="location">
+          <img src="images/location-icon.svg" alt="location-icon" />
+          <p>Our Location:</p>
+          <span>4517 Washington Ave. Manchester, Kentucky 39495</span>
+        </div>
+      </div>
+    </section>
+    <section class="questions-section">
+      <div>
+        <img src="images/lamp-on.svg" alt="lamp-on" />
+        <h6>Questions about joining Haruki?</h6>
+        <p>
+          Learn more about our interview process on our frequently asked
+          questions page.
+        </p>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="return-to-top">
+        <p>Back to Top</p>
+        <button id="scroll-to-top">
+          <img src="images/arrow-up.svg" alt="arrow-up" />
+        </button>
+      </div>
+      <div class="icon-container">
+        <button>
+          <img src="images/instagram-icon.svg" alt="instagram-icon" />
+        </button>
+        <button>
+          <img src="images/twitter-icon.svg" alt="twitter-icon" />
+        </button>
+        <button><img src="images/linkedln.svg" alt="linkedln-icon" /></button>
+        <button><img src="images/tiktok-icon.svg" alt="tiktok-icon" /></button>
+      </div>
+      <div class="language-selector">
+        <div class="input-container">
+          <input type="text" placeholder="English" class="language-input" />
+          <button class="language-button">
+            <img src="images/language-arrow-up.svg" alt="Select language" />
+          </button>
+        </div>
+        <div class="language-menu">
+          <ul>
+            <li>English</li>
+            <li>Spanish</li>
+            <li>French</li>
+            <li>German</li>
+          </ul>
+        </div>
+      </div>
+      <div class="li-container">
+        <ul>
+          <li>Home</li>
+          <li>Careers</li>
+          <li>Policies</li>
+          <li>FAQ's</li>
+          <li>Terms & Privacy</li>
+        </ul>
+      </div>
+      <div class="underline"></div>
+      <p class="name-date">HARUKI 2022</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
