@@ -185,4 +185,8 @@
   .name-date {
     margin-left: 72px;
   }
+  .main-body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 }
